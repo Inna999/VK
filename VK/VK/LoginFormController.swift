@@ -24,14 +24,16 @@ class LoginFormController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
-        let login = loginInput.text!
-        let password = passwordInput.text!
-        
-        if login == "admin" && password == "123456" {
-            print("autorization success")
-        } else {
-            print("autorization doesn't success")
-        }
+        let info = VkApi()
+        info.loadInfo()
+//        let login = loginInput.text!
+//        let password = passwordInput.text!
+//        
+//        if login == "admin" && password == "123456" {
+//            print("autorization success")
+//        } else {
+//            print("autorization doesn't success")
+//        }
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
