@@ -57,7 +57,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fFQ-PP-Z6O"/>
+                                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fko-1c-zFd"/>
                                                     <segue destination="zkg-gO-mbc" kind="show" id="e82-xY-rev"/>
                                                 </connections>
                                             </button>
