@@ -25,15 +25,15 @@ class LoginFormController: UIViewController {
     
     @IBAction func loginButtonPressed(_ sender: Any) {
         let info = VkApi()
-        info.loadInfo()
-//        let login = loginInput.text!
-//        let password = passwordInput.text!
-//        
-//        if login == "admin" && password == "123456" {
-//            print("autorization success")
-//        } else {
-//            print("autorization doesn't success")
-//        }
+        //запрос списка друзей
+        info.getRequest(params: ["fields" : ["first_name", "last_name"], "count": 5])
+        
+        //запрос фото
+        info.getRequest(method: "photos.get", params: ["album_id" : "profile", "count": 1])
+        
+        //получение групп - не получить без ключа доступа пользователя
+        info.getRequest(method: "groups.get", params: ["count": 5])
+
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
