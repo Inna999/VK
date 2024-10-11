@@ -1,72 +1,41 @@
-//
-//  LoginFormController.swift
-//  VK
-//
-//  Created by  Admin on 07.10.2024.
-//
-
 import UIKit
 
-class LoginFormController: UIViewController {
+protocol LoginViewProtocol: AnyObject {
+    func showLoginError()
+}
+
+class LoginViewController: UIViewController {
+    var presenter: LoginPresenterProtocol?
+    let module = LoginModule()
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loginInput: UITextField!
-
     @IBOutlet weak var passwordInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        module.build(with: self)
+        
         //жест нажатия
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
         //присваиваем его UIScrollView
         scrollView?.addGestureRecognizer(hideKeyboardGesture)
     }
-    
-    @IBAction func loginButtonPressed(_ sender: Any) {
-        let info = VkApi()
-        //запрос списка друзей
-        info.getRequest(params: ["fields" : ["first_name", "last_name"], "count": 5])
-        
-        //запрос фото
-        info.getRequest(method: "photos.get", params: ["album_id" : "profile", "count": 1])
-        
-        //получение групп - не получить без ключа доступа пользователя
-        info.getRequest(method: "groups.get", params: ["count": 5])
 
+    @IBAction func loginButtonPressed(_ sender: Any) {
     }
-    
+    /// проверка пароля перед переходом
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        
-        let checkResult = checkUserData()
-        
-        if !checkResult {
-            showLoginError()
-        }
-        
-        return checkResult
-    }
-    
-    //проверка пароля
-    func checkUserData() -> Bool {
         let login = loginInput.text!
         let password = passwordInput.text!
-        
-        if login == "1" && password == "1" {
-            return true
-        } else {
-            return false
+        let checkPassword = presenter?.checkPassword(login: login, password: password)
+        if !(checkPassword ?? false) {
+            showLoginError()
         }
-    }
-    //сообщение о неверном логине/пароле
-    func showLoginError() {
-        let alert = UIAlertController(title: "Error", message: "Uncorrect login or password", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .cancel)
-        alert.addAction(action)
-        present(alert, animated: true)
+        return checkPassword ?? false
     }
     
-    //когда клавиатура появлятся
+    /// когда клавиатура появлятся
     @objc func keyboardWasShown(notification: Notification) {
         
         //получаем размер клавиатуры
@@ -79,7 +48,7 @@ class LoginFormController: UIViewController {
         scrollView?.scrollIndicatorInsets = contentInsets
     }
     
-    //когда клавиатура исчезает
+    /// когда клавиатура исчезает
     @objc func keyboardWillBeHidden(notifikation: Notification) {
         //устанавливем отступ внизу UIScrollView равный 0
         let contentInserts = UIEdgeInsets.zero
@@ -116,14 +85,14 @@ class LoginFormController: UIViewController {
     @objc func hideKeyboard() {
         self.scrollView?.endEditing(true)
     }
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension LoginViewController: LoginViewProtocol {
+    /// Cообщение о неверном логине/пароле
+    func showLoginError() {
+        let alert = UIAlertController(title: "Error", message: "Uncorrect login or password", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel)
+        alert.addAction(action)
+        present(alert, animated: true)
     }
-    */
-
 }

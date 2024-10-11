@@ -12,16 +12,39 @@
 		841278CD2CB406D300C6296D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 841278CC2CB406D300C6296D /* Base */; };
 		841278CF2CB406D400C6296D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841278CE2CB406D400C6296D /* Assets.xcassets */; };
 		841278D22CB406D400C6296D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 841278D12CB406D400C6296D /* Base */; };
-		841278DA2CB4084A00C6296D /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841278D92CB4084A00C6296D /* LoginFormController.swift */; };
+		841278DA2CB4084A00C6296D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841278D92CB4084A00C6296D /* LoginViewController.swift */; };
 		841278DD2CB4304B00C6296D /* AllGroupesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841278DC2CB4304B00C6296D /* AllGroupesController.swift */; };
 		841278DF2CB4306B00C6296D /* AllGroupesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841278DE2CB4306B00C6296D /* AllGroupesCell.swift */; };
 		841278E22CB4363F00C6296D /* MyGroupesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841278E12CB4363F00C6296D /* MyGroupesController.swift */; };
 		841278E42CB4365300C6296D /* MyGroupesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841278E32CB4365300C6296D /* MyGroupesCell.swift */; };
 		841278E72CB4430100C6296D /* MyFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841278E62CB4430100C6296D /* MyFriendsController.swift */; };
 		841278E92CB4431400C6296D /* MyFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841278E82CB4431400C6296D /* MyFriendsCell.swift */; };
-		9D3AE8D72CB50D3F002DBD80 /* FriendAvatarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AE8D62CB50D3F002DBD80 /* FriendAvatarController.swift */; };
-		9D3AE8D92CB50D5A002DBD80 /* FriendAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AE8D82CB50D5A002DBD80 /* FriendAvatarCell.swift */; };
-		9DE6CB472CB5608100F5D38F /* VkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE6CB462CB5608100F5D38F /* VkApi.swift */; };
+		9D16979D2CB9494E00F97BCB /* MyFriendsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16979C2CB9494E00F97BCB /* MyFriendsPresenter.swift */; };
+		9D16979F2CB94A0B00F97BCB /* MyFriendsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16979E2CB94A0B00F97BCB /* MyFriendsRouter.swift */; };
+		9D1697A12CB94A4500F97BCB /* MyFriendsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1697A02CB94A4500F97BCB /* MyFriendsInteractor.swift */; };
+		9D1697A32CB94AAD00F97BCB /* MyFriendsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1697A22CB94AAD00F97BCB /* MyFriendsModule.swift */; };
+		9D1697A62CB958E300F97BCB /* AllGroupesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1697A52CB958E300F97BCB /* AllGroupesPresenter.swift */; };
+		9D1697A82CB9595900F97BCB /* AllGroupesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1697A72CB9595900F97BCB /* AllGroupesRouter.swift */; };
+		9D1697AA2CB959B500F97BCB /* AllGroupesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1697A92CB959B500F97BCB /* AllGroupesInteractor.swift */; };
+		9D1697AC2CB95A2F00F97BCB /* AllGroupesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1697AB2CB95A2F00F97BCB /* AllGroupesModule.swift */; };
+		9D1697AF2CB95E6300F97BCB /* MyGroupesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1697AE2CB95E6300F97BCB /* MyGroupesPresenter.swift */; };
+		9D1697B12CB95ED200F97BCB /* MyGroupesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1697B02CB95ED200F97BCB /* MyGroupesRouter.swift */; };
+		9D1697B32CB95F3700F97BCB /* MyGroupesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1697B22CB95F3700F97BCB /* MyGroupesInteractor.swift */; };
+		9D1697B52CB95F8F00F97BCB /* MyGroupesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1697B42CB95F8F00F97BCB /* MyGroupesModule.swift */; };
+		9D3AE8D72CB50D3F002DBD80 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AE8D62CB50D3F002DBD80 /* PhotosViewController.swift */; };
+		9D3AE8D92CB50D5A002DBD80 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AE8D82CB50D5A002DBD80 /* PhotoCell.swift */; };
+		9D70BFA02CB8FFF80037CB84 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70BF9F2CB8FFF80037CB84 /* LoginPresenter.swift */; };
+		9D70BFA22CB905C10037CB84 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70BFA12CB905C10037CB84 /* LoginRouter.swift */; };
+		9D70BFA42CB9063F0037CB84 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70BFA32CB9063F0037CB84 /* LoginInteractor.swift */; };
+		9D70BFA62CB906F80037CB84 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70BFA52CB906F80037CB84 /* LoginModule.swift */; };
+		9D7DE43F2CB7ADDA0028EC6E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DE43E2CB7ADDA0028EC6E /* User.swift */; };
+		9D7DE4412CB7D1FF0028EC6E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DE4402CB7D1FF0028EC6E /* Photo.swift */; };
+		9D7DE4432CB805CE0028EC6E /* PhotosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DE4422CB805CE0028EC6E /* PhotosPresenter.swift */; };
+		9D7DE4452CB806370028EC6E /* PhotosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DE4442CB806370028EC6E /* PhotosInteractor.swift */; };
+		9D7DE4472CB8065C0028EC6E /* PhotosModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DE4462CB8065C0028EC6E /* PhotosModule.swift */; };
+		9D7DE4492CB806770028EC6E /* PhotosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DE4482CB806770028EC6E /* PhotosRouter.swift */; };
+		9DAE33982CB66C5900580D2B /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9DAE33972CB66C5900580D2B /* SwiftyJSON */; };
+		9DE6CB472CB5608100F5D38F /* VkApiServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE6CB462CB5608100F5D38F /* VkApiServise.swift */; };
 		9DE6CB4A2CB5619A00F5D38F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE6CB492CB5619A00F5D38F /* Alamofire */; };
 		9DE6CB4C2CB5619A00F5D38F /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE6CB4B2CB5619A00F5D38F /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
@@ -34,16 +57,38 @@
 		841278CE2CB406D400C6296D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841278D12CB406D400C6296D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841278D32CB406D400C6296D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		841278D92CB4084A00C6296D /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
+		841278D92CB4084A00C6296D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		841278DC2CB4304B00C6296D /* AllGroupesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupesController.swift; sourceTree = "<group>"; };
 		841278DE2CB4306B00C6296D /* AllGroupesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupesCell.swift; sourceTree = "<group>"; };
 		841278E12CB4363F00C6296D /* MyGroupesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupesController.swift; sourceTree = "<group>"; };
 		841278E32CB4365300C6296D /* MyGroupesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupesCell.swift; sourceTree = "<group>"; };
 		841278E62CB4430100C6296D /* MyFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsController.swift; sourceTree = "<group>"; };
 		841278E82CB4431400C6296D /* MyFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsCell.swift; sourceTree = "<group>"; };
-		9D3AE8D62CB50D3F002DBD80 /* FriendAvatarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAvatarController.swift; sourceTree = "<group>"; };
-		9D3AE8D82CB50D5A002DBD80 /* FriendAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAvatarCell.swift; sourceTree = "<group>"; };
-		9DE6CB462CB5608100F5D38F /* VkApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkApi.swift; sourceTree = "<group>"; };
+		9D16979C2CB9494E00F97BCB /* MyFriendsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsPresenter.swift; sourceTree = "<group>"; };
+		9D16979E2CB94A0B00F97BCB /* MyFriendsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsRouter.swift; sourceTree = "<group>"; };
+		9D1697A02CB94A4500F97BCB /* MyFriendsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsInteractor.swift; sourceTree = "<group>"; };
+		9D1697A22CB94AAD00F97BCB /* MyFriendsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsModule.swift; sourceTree = "<group>"; };
+		9D1697A52CB958E300F97BCB /* AllGroupesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupesPresenter.swift; sourceTree = "<group>"; };
+		9D1697A72CB9595900F97BCB /* AllGroupesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupesRouter.swift; sourceTree = "<group>"; };
+		9D1697A92CB959B500F97BCB /* AllGroupesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupesInteractor.swift; sourceTree = "<group>"; };
+		9D1697AB2CB95A2F00F97BCB /* AllGroupesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupesModule.swift; sourceTree = "<group>"; };
+		9D1697AE2CB95E6300F97BCB /* MyGroupesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupesPresenter.swift; sourceTree = "<group>"; };
+		9D1697B02CB95ED200F97BCB /* MyGroupesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupesRouter.swift; sourceTree = "<group>"; };
+		9D1697B22CB95F3700F97BCB /* MyGroupesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupesInteractor.swift; sourceTree = "<group>"; };
+		9D1697B42CB95F8F00F97BCB /* MyGroupesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupesModule.swift; sourceTree = "<group>"; };
+		9D3AE8D62CB50D3F002DBD80 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		9D3AE8D82CB50D5A002DBD80 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		9D70BF9F2CB8FFF80037CB84 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		9D70BFA12CB905C10037CB84 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		9D70BFA32CB9063F0037CB84 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		9D70BFA52CB906F80037CB84 /* LoginModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
+		9D7DE43E2CB7ADDA0028EC6E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9D7DE4402CB7D1FF0028EC6E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		9D7DE4422CB805CE0028EC6E /* PhotosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPresenter.swift; sourceTree = "<group>"; };
+		9D7DE4442CB806370028EC6E /* PhotosInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosInteractor.swift; sourceTree = "<group>"; };
+		9D7DE4462CB8065C0028EC6E /* PhotosModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModule.swift; sourceTree = "<group>"; };
+		9D7DE4482CB806770028EC6E /* PhotosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosRouter.swift; sourceTree = "<group>"; };
+		9DE6CB462CB5608100F5D38F /* VkApiServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkApiServise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DAE33982CB66C5900580D2B /* SwiftyJSON in Frameworks */,
 				9DE6CB4A2CB5619A00F5D38F /* Alamofire in Frameworks */,
 				9DE6CB4C2CB5619A00F5D38F /* AlamofireDynamic in Frameworks */,
 			);
@@ -78,18 +124,18 @@
 		841278C42CB406D300C6296D /* VK */ = {
 			isa = PBXGroup;
 			children = (
-				9D3AE8D52CB50CCC002DBD80 /* FriendAvatar */,
+				841278DB2CB42F7600C6296D /* AllGroupes */,
+				9D70BF9E2CB8FDB10037CB84 /* Login */,
 				841278E52CB442DB00C6296D /* MyFriends */,
 				841278E02CB4351800C6296D /* MyGroupes */,
-				841278DB2CB42F7600C6296D /* AllGroupes */,
+				9D3AE8D52CB50CCC002DBD80 /* Photos */,
+				9D1697AD2CB95C6900F97BCB /* Servises */,
 				841278C52CB406D300C6296D /* AppDelegate.swift */,
 				841278C72CB406D300C6296D /* SceneDelegate.swift */,
 				841278CB2CB406D300C6296D /* Main.storyboard */,
 				841278CE2CB406D400C6296D /* Assets.xcassets */,
 				841278D02CB406D400C6296D /* LaunchScreen.storyboard */,
 				841278D32CB406D400C6296D /* Info.plist */,
-				841278D92CB4084A00C6296D /* LoginFormController.swift */,
-				9DE6CB462CB5608100F5D38F /* VkApi.swift */,
 			);
 			path = VK;
 			sourceTree = "<group>";
@@ -99,6 +145,10 @@
 			children = (
 				841278DC2CB4304B00C6296D /* AllGroupesController.swift */,
 				841278DE2CB4306B00C6296D /* AllGroupesCell.swift */,
+				9D1697A52CB958E300F97BCB /* AllGroupesPresenter.swift */,
+				9D1697A72CB9595900F97BCB /* AllGroupesRouter.swift */,
+				9D1697A92CB959B500F97BCB /* AllGroupesInteractor.swift */,
+				9D1697AB2CB95A2F00F97BCB /* AllGroupesModule.swift */,
 			);
 			path = AllGroupes;
 			sourceTree = "<group>";
@@ -108,6 +158,10 @@
 			children = (
 				841278E12CB4363F00C6296D /* MyGroupesController.swift */,
 				841278E32CB4365300C6296D /* MyGroupesCell.swift */,
+				9D1697AE2CB95E6300F97BCB /* MyGroupesPresenter.swift */,
+				9D1697B02CB95ED200F97BCB /* MyGroupesRouter.swift */,
+				9D1697B22CB95F3700F97BCB /* MyGroupesInteractor.swift */,
+				9D1697B42CB95F8F00F97BCB /* MyGroupesModule.swift */,
 			);
 			path = MyGroupes;
 			sourceTree = "<group>";
@@ -117,17 +171,47 @@
 			children = (
 				841278E62CB4430100C6296D /* MyFriendsController.swift */,
 				841278E82CB4431400C6296D /* MyFriendsCell.swift */,
+				9D16979C2CB9494E00F97BCB /* MyFriendsPresenter.swift */,
+				9D16979E2CB94A0B00F97BCB /* MyFriendsRouter.swift */,
+				9D1697A02CB94A4500F97BCB /* MyFriendsInteractor.swift */,
+				9D1697A22CB94AAD00F97BCB /* MyFriendsModule.swift */,
 			);
 			path = MyFriends;
 			sourceTree = "<group>";
 		};
-		9D3AE8D52CB50CCC002DBD80 /* FriendAvatar */ = {
+		9D1697AD2CB95C6900F97BCB /* Servises */ = {
 			isa = PBXGroup;
 			children = (
-				9D3AE8D62CB50D3F002DBD80 /* FriendAvatarController.swift */,
-				9D3AE8D82CB50D5A002DBD80 /* FriendAvatarCell.swift */,
+				9D7DE4402CB7D1FF0028EC6E /* Photo.swift */,
+				9DE6CB462CB5608100F5D38F /* VkApiServise.swift */,
+				9D7DE43E2CB7ADDA0028EC6E /* User.swift */,
 			);
-			path = FriendAvatar;
+			path = Servises;
+			sourceTree = "<group>";
+		};
+		9D3AE8D52CB50CCC002DBD80 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				9D3AE8D62CB50D3F002DBD80 /* PhotosViewController.swift */,
+				9D3AE8D82CB50D5A002DBD80 /* PhotoCell.swift */,
+				9D7DE4422CB805CE0028EC6E /* PhotosPresenter.swift */,
+				9D7DE4482CB806770028EC6E /* PhotosRouter.swift */,
+				9D7DE4442CB806370028EC6E /* PhotosInteractor.swift */,
+				9D7DE4462CB8065C0028EC6E /* PhotosModule.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		9D70BF9E2CB8FDB10037CB84 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				841278D92CB4084A00C6296D /* LoginViewController.swift */,
+				9D70BF9F2CB8FFF80037CB84 /* LoginPresenter.swift */,
+				9D70BFA12CB905C10037CB84 /* LoginRouter.swift */,
+				9D70BFA32CB9063F0037CB84 /* LoginInteractor.swift */,
+				9D70BFA52CB906F80037CB84 /* LoginModule.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +233,7 @@
 			packageProductDependencies = (
 				9DE6CB492CB5619A00F5D38F /* Alamofire */,
 				9DE6CB4B2CB5619A00F5D38F /* AlamofireDynamic */,
+				9DAE33972CB66C5900580D2B /* SwiftyJSON */,
 			);
 			productName = VK;
 			productReference = 841278C22CB406D300C6296D /* VK.app */;
@@ -180,6 +265,7 @@
 			mainGroup = 841278B92CB406D300C6296D;
 			packageReferences = (
 				9DE6CB482CB5619A00F5D38F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9DAE33962CB66C5900580D2B /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 841278C32CB406D300C6296D /* Products */;
 			projectDirPath = "";
@@ -208,18 +294,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841278DA2CB4084A00C6296D /* LoginFormController.swift in Sources */,
-				9DE6CB472CB5608100F5D38F /* VkApi.swift in Sources */,
+				9D7DE4412CB7D1FF0028EC6E /* Photo.swift in Sources */,
+				9D1697AF2CB95E6300F97BCB /* MyGroupesPresenter.swift in Sources */,
+				9D7DE43F2CB7ADDA0028EC6E /* User.swift in Sources */,
+				9D1697B32CB95F3700F97BCB /* MyGroupesInteractor.swift in Sources */,
+				9D70BFA42CB9063F0037CB84 /* LoginInteractor.swift in Sources */,
+				841278DA2CB4084A00C6296D /* LoginViewController.swift in Sources */,
+				9DE6CB472CB5608100F5D38F /* VkApiServise.swift in Sources */,
+				9D1697AC2CB95A2F00F97BCB /* AllGroupesModule.swift in Sources */,
 				841278E72CB4430100C6296D /* MyFriendsController.swift in Sources */,
-				9D3AE8D92CB50D5A002DBD80 /* FriendAvatarCell.swift in Sources */,
+				9D1697AA2CB959B500F97BCB /* AllGroupesInteractor.swift in Sources */,
+				9D3AE8D92CB50D5A002DBD80 /* PhotoCell.swift in Sources */,
+				9D1697A32CB94AAD00F97BCB /* MyFriendsModule.swift in Sources */,
+				9D7DE4472CB8065C0028EC6E /* PhotosModule.swift in Sources */,
 				841278C62CB406D300C6296D /* AppDelegate.swift in Sources */,
 				841278DF2CB4306B00C6296D /* AllGroupesCell.swift in Sources */,
+				9D16979F2CB94A0B00F97BCB /* MyFriendsRouter.swift in Sources */,
+				9D1697A82CB9595900F97BCB /* AllGroupesRouter.swift in Sources */,
+				9D7DE4432CB805CE0028EC6E /* PhotosPresenter.swift in Sources */,
+				9D7DE4452CB806370028EC6E /* PhotosInteractor.swift in Sources */,
+				9D7DE4492CB806770028EC6E /* PhotosRouter.swift in Sources */,
 				841278E92CB4431400C6296D /* MyFriendsCell.swift in Sources */,
+				9D70BFA02CB8FFF80037CB84 /* LoginPresenter.swift in Sources */,
+				9D70BFA62CB906F80037CB84 /* LoginModule.swift in Sources */,
 				841278E42CB4365300C6296D /* MyGroupesCell.swift in Sources */,
 				841278E22CB4363F00C6296D /* MyGroupesController.swift in Sources */,
+				9D1697A62CB958E300F97BCB /* AllGroupesPresenter.swift in Sources */,
+				9D1697B52CB95F8F00F97BCB /* MyGroupesModule.swift in Sources */,
 				841278C82CB406D300C6296D /* SceneDelegate.swift in Sources */,
-				9D3AE8D72CB50D3F002DBD80 /* FriendAvatarController.swift in Sources */,
+				9D3AE8D72CB50D3F002DBD80 /* PhotosViewController.swift in Sources */,
+				9D70BFA22CB905C10037CB84 /* LoginRouter.swift in Sources */,
+				9D1697B12CB95ED200F97BCB /* MyGroupesRouter.swift in Sources */,
+				9D16979D2CB9494E00F97BCB /* MyFriendsPresenter.swift in Sources */,
 				841278DD2CB4304B00C6296D /* AllGroupesController.swift in Sources */,
+				9D1697A12CB94A4500F97BCB /* MyFriendsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +554,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9DAE33962CB66C5900580D2B /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.2;
+			};
+		};
 		9DE6CB482CB5619A00F5D38F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -457,6 +573,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9DAE33972CB66C5900580D2B /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DAE33962CB66C5900580D2B /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
 		9DE6CB492CB5619A00F5D38F /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9DE6CB482CB5619A00F5D38F /* XCRemoteSwiftPackageReference "Alamofire" */;
