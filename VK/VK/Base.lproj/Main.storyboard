@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login Form Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginFormController" customModule="VK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="LoginViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +57,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fFQ-PP-Z6O"/>
+                                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fko-1c-zFd"/>
                                                     <segue destination="zkg-gO-mbc" kind="show" id="e82-xY-rev"/>
                                                 </connections>
                                             </button>
@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
-        <!--My Friends Controller-->
+        <!--My Friends View Controller-->
         <scene sceneID="BTj-KO-b3o">
             <objects>
-                <tableViewController id="vP8-UL-qLn" customClass="MyFriendsController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="vP8-UL-qLn" customClass="MyFriendsViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="iSN-uV-wuL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="2765.6488549618321" y="-276.05633802816902"/>
         </scene>
-        <!--Friend Avatar Controller-->
+        <!--Photos View Controller-->
         <scene sceneID="DYH-sy-0zy">
             <objects>
-                <collectionViewController id="pyG-3L-ceV" customClass="FriendAvatarController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="pyG-3L-ceV" customClass="PhotosViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="S9c-sH-9CY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,10 +201,10 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvatarCell" id="Kfd-xj-sBM" customClass="FriendAvatarCell" customModule="VK" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="PhotoCell" id="Kfd-xj-sBM" customClass="PhotoCell" customModule="VK" customModuleProvider="target">
                                 <rect key="frame" x="71.666666666666671" y="0.0" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qvQ-Nx-qQE">
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Txi-lH-B5n">
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -214,15 +214,15 @@
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Khh-pD-12M" firstAttribute="centerX" secondItem="qvQ-Nx-qQE" secondAttribute="centerX" id="2QJ-hH-k5x"/>
-                                        <constraint firstItem="Khh-pD-12M" firstAttribute="centerY" secondItem="qvQ-Nx-qQE" secondAttribute="centerY" id="2yW-iz-2qs"/>
-                                        <constraint firstItem="Khh-pD-12M" firstAttribute="width" secondItem="qvQ-Nx-qQE" secondAttribute="width" id="7Gf-pL-RGP"/>
-                                        <constraint firstItem="Khh-pD-12M" firstAttribute="height" secondItem="qvQ-Nx-qQE" secondAttribute="height" id="8Ca-SN-lD0"/>
+                                        <constraint firstItem="Khh-pD-12M" firstAttribute="centerX" secondItem="Txi-lH-B5n" secondAttribute="centerX" id="2QJ-hH-k5x"/>
+                                        <constraint firstItem="Khh-pD-12M" firstAttribute="centerY" secondItem="Txi-lH-B5n" secondAttribute="centerY" id="2yW-iz-2qs"/>
+                                        <constraint firstItem="Khh-pD-12M" firstAttribute="width" secondItem="Txi-lH-B5n" secondAttribute="width" id="7Gf-pL-RGP"/>
+                                        <constraint firstItem="Khh-pD-12M" firstAttribute="height" secondItem="Txi-lH-B5n" secondAttribute="height" id="8Ca-SN-lD0"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="250" height="250"/>
                                 <connections>
-                                    <outlet property="friendAvatar" destination="Khh-pD-12M" id="zTM-GL-jgZ"/>
+                                    <outlet property="photo" destination="Khh-pD-12M" id="kLf-YH-wdF"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -237,10 +237,10 @@
             </objects>
             <point key="canvasLocation" x="3724.4274809160302" y="-276.05633802816902"/>
         </scene>
-        <!--My Groupes Controller-->
+        <!--My Groupes View Controller-->
         <scene sceneID="pJm-vt-bSp">
             <objects>
-                <tableViewController id="B3Q-na-P1I" customClass="MyGroupesController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="B3Q-na-P1I" customClass="MyGroupesViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="QhY-V9-EX7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,10 +299,10 @@
             </objects>
             <point key="canvasLocation" x="2765.6488549618321" y="407.74647887323948"/>
         </scene>
-        <!--All Groupes Controller-->
+        <!--All Groupes View Controller-->
         <scene sceneID="Dg7-wd-uFM">
             <objects>
-                <tableViewController id="fNJ-JL-sgU" customClass="AllGroupesController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fNJ-JL-sgU" customClass="AllGroupesViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="2E2-mi-NGG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

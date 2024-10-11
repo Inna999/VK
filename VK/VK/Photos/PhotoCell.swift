@@ -7,8 +7,8 @@
 
 import UIKit
 
-class FriendAvatarCell: UICollectionViewCell {
+class PhotoCell: UICollectionViewCell {
     
-    @IBOutlet weak var friendAvatar: UIImageView!
+    @IBOutlet weak var /*friendAvatar*/ photo: UIImageView!
     
 }

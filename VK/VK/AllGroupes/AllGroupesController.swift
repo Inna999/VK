@@ -7,31 +7,23 @@
 
 import UIKit
 
-class AllGroupesController: UITableViewController {
+protocol AllGroupesViewProtocol: AnyObject {
     
-    var groupes = [
-        ["1.png", "wqerty", "23434"],
-        ["2.png", "group2", "989"],
-        ["3.png", "asdfgh", "9"]
-        ]
-//    var followers = ["123", "3456", "8878"]
-//    var avatar = ["1.png", "2.png", "3.png"]
+}
 
+class AllGroupesViewController: UITableViewController {
+    var presenter: AllGroupesPresenter?
+    let module = AllGroupesModule()
+    
     @IBOutlet weak var searchBar: UISearchBar!
-    
+    var groupes = [[String]]()
     var searchedGroupes = [[String]]()
-  
     var searching = false
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        module.build(with: self)
+        presenter?.viewDidLoaded()
     }
 
     // MARK: - Table view data source
@@ -65,57 +57,9 @@ class AllGroupesController: UITableViewController {
         return cell
         
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
- 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     }
-     */
-    
-
- 
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
-extension AllGroupesController: UISearchBarDelegate {
+extension AllGroupesViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchedGroupes = groupes.filter { $0[1].lowercased().prefix(searchText.count) == searchText.lowercased() }
         searching = true
@@ -127,4 +71,8 @@ extension AllGroupesController: UISearchBarDelegate {
         searchBar.text = ""
         tableView.reloadData()
     }
+}
+
+extension AllGroupesViewController: AllGroupesViewProtocol {
+    
 }
